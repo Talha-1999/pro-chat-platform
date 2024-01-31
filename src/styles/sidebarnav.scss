@@ -1,0 +1,16 @@
+.navflex1{
+    flex:2;
+    background-color: #ffa500;
+    display: flex;
+    gap:10px;
+    padding-left:10px;
+    align-items: center;
+}
+.navflex2{
+    flex:1;
+    background-color: #ffa500;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+
+}

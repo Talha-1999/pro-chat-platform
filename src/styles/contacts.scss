@@ -1,0 +1,23 @@
+.contactitem{
+    margin: 2px;
+    padding: 10px;
+    display: flex;
+    gap:10px;
+
+    &:hover{
+        background-color: rgb(53, 51, 51);
+        cursor: pointer;
+    }
+
+    .nameDiv{
+        position: relative;
+        width: 100%;
+        
+        .date{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            font-size: 12px
+        }
+    }
+}

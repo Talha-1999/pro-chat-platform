@@ -1,0 +1,44 @@
+.conversationBar{
+    flex:1;
+    background-color: #ffa500;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    justify-content: space-between;
+    div{
+        display: flex;
+        gap:10px;
+        align-items: center;
+    }
+
+}
+.conversations{
+    flex:6;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 5px 5px;
+    overflow-y: auto;
+
+    .messages{
+        margin: 2px;
+        padding: 10px;
+        display: flex;
+        gap:10px;
+    }
+}
+.conversationsInput{
+    flex: 1;
+    border-top: 1px solid #5a5958;
+    display: flex;
+    padding: 0 40px 0 20px;
+    gap:20px;
+    align-items: center;
+
+    div{
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+}

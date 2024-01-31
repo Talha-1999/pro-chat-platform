@@ -1,0 +1,63 @@
+@mixin mobile(){
+    @media screen and (max-width:480px) {
+        @content
+    }
+}
+
+@mixin tablet(){
+    @media screen and (max-width:768px) {
+        @content
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    
+    .container{
+        width: 40vw;
+        background-color: rgba(25, 24, 24, 0.789);
+        padding:20px;
+        border-radius: 10px;
+        @include tablet(){
+            width: 70vw;
+        }
+        @include mobile(){
+            width: 100vw;
+        }
+
+        .heading{
+            font-size: 35px;
+            padding: 10px;
+            font-weight: 700;
+            text-align: center;
+            color: orange;
+        }
+        .footer{
+            color: white;
+            text-align: center;
+            padding-top: 30px
+        }
+       
+    }
+}
+.loginformbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;   
+
+    Button{
+        background-color: #ffa500;
+        width: 200px;
+
+        &:hover{
+            background-color: transparent;
+            border: 1px solid #ffa500;
+            color:#ffa500
+        }
+    }
+}
